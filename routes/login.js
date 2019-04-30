@@ -8,11 +8,14 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
+  res.render('index')
+/*  console.log("your root is (( / ))")
   if(req.session.amos){
-    res.redirect('users');
-  }else{
-    res.render('index')
+    res.redirect('/users');
   }
+  
+  res.redirect('/accueil');
+*/
 });
 
 /*

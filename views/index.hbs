@@ -11,6 +11,9 @@
 
       <h2><span class="fontawesome-lock"></span>Sign In</h2>
 
+      {{#if msg}}
+        <p style="color: red">{{ msg }}</p>
+      {{/if}}
       <form action="" method="POST">
 
         <fieldset>
