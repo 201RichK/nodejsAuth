@@ -2,7 +2,7 @@ var express = require('express');
 let expressValidator = require('express-validator')
 
 
-let db = require("../db")
+let db = require("../config/db")
 var router = express.Router();
 
 
