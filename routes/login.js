@@ -42,6 +42,8 @@ router.post('/',[check("email", "Email invalid").isEmail(), check("password").is
               req.session.nodeAuth = user;
               console.log(req.session)
               res.redirect('/users');
+            }else{
+              res.render("accueil")
             }
           })
         }
