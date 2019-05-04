@@ -18,10 +18,10 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 app.use(session({
-    secret: 'keyboard cat',
+    secret: 'dlvjdlj',
     resave: false,
-    saveUninitialized: false,
-    //cookie: { secure: true }
+    saveUninitialized: true,
+    cookie: { secure: false }
   }))
 
 app.use(logger('dev'));

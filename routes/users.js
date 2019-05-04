@@ -4,12 +4,12 @@ let session = require("express-session")
 var router = express.Router();
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  if(req.session.amos){
-     res.redirect('/users');
+router.get('/', function(req, res) {
+  if(req.session.nodeAuth){
+     res.render('users');
+  }else{
+    res.render("index");
   }
-
-  res.render("index");
 
 });
 
